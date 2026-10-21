@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografia em Símbolos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span>Criptografia em Símbolos</span>
+        </div>
+      </header>
+
+      <main class="app">
+        <section class="card input-card">
+          <div class="card-header">
+            <p class="eyebrow">Área de senha</p>
+            <h1>Criptografe sua senha</h1>
+          </div>
+
+          <label class="label" for="senha">Digite sua senha</label>
+          <input id="senha" type="password" placeholder="Ex: MinhaSenha123" />
+
+          <div class="actions">
+            <button id="btnCriptografar" class="primary">Criptografar</button>
+            <button id="btnLimpar" class="ghost" type="button">Limpar</button>
+          </div>
+
+          <div class="result-wrap">
+            <p class="result-label">Resultado</p>
+            <div id="resultado" class="resultado" aria-live="polite">✧ ✧ ✧</div>
+          </div>
+        </section>
+
+        <aside class="card steps-card">
+          <div class="card-header">
+            <p class="eyebrow">Explicação</p>
+            <h2>Como funciona</h2>
+          </div>
+
+          <ol id="passos" class="passos">
+            <li><strong>1.</strong> A senha é separada letra por letra.</li>
+            <li><strong>2.</strong> Cada caractere vira um valor numérico (ASCII).</li>
+            <li><strong>3.</strong> Um código secreto é somado para embaralhar.</li>
+            <li><strong>4.</strong> Esses números viram símbolos especiais.</li>
+            <li><strong>5.</strong> A sequência final aparece no resultado.</li>
+          </ol>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
